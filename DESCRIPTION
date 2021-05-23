@@ -1,0 +1,15 @@
+Package: KLexp
+Title: Kernel_lasso expansion
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Zongrui",
+           family = "Dai",
+           role = c("aut", "cre"),
+           email = "dzr17723980497@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-7893-5004"))
+Description: Kernel_lasso package can expands the features of existed data .
+License: NULL
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9001
