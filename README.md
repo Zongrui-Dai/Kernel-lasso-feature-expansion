@@ -5,14 +5,15 @@ This program manily used to amplify the existed dimension of dataset by creating
 2. Remove the abundant feature by lasso method<br>
 
 This method may improve the accuracy of some models when making regression or classification. It's one small attempt, which may need further improvement.<br>
+
 <div align=center>
-<img src="https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/fig/lasso.jpeg">/>
+<img src="https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/fig/lasso.jpeg">
 </div>
 
-This is the output figure which is made by 'glmnet' pakcage. The two vertical lines represent two different feature numbers. (lambda_min = 8, lambda_1se = 7).<br> Detailed information can be viewed from ‘glmnet’ package. 
+This is the output figure which is made by 'glmnet' pakcage. The two vertical lines represent two different feature numbers. (lambda_min = 8, lambda_1se = 7).Detailed information can be viewed from ‘glmnet’ package. 
 
 ## Function
-1.[Kernel_lasso.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Kernel_lasso.R)
+1.[Kernel_lasso.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Kernel_lasso.R)<br>
 It is used to construct the kernel-lasso structure and output the final features. The ‘kernel_lasso_expansion’ will return 5 results contains in one list:<br>
 ```R
 List of 5
@@ -22,7 +23,7 @@ List of 5
  $ final_data   :'data.frame':	182 obs. of  8 variables:     ##The dataset of the final feature
  $ lasso        :List of 12                                   ##The result from the cv.glmnet()
 ```
-2.[Standardization.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Standardization.R)
+2.[Standardization.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Standardization.R)<br>
 This function is used to calculate the Z-score and max-min-scale of the dataset. The input dataset should be ‘data.frame’
 
 ## Future work
