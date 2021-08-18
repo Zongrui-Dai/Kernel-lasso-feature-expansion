@@ -6,7 +6,7 @@ This program manily used to amplify the existed dimension of dataset by creating
 
 This method may improve the accuracy of some models when making regression or classification. It's one small attempt, which may need further improvement.<br>
 <div align=center>
-<img src="https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/fig/lasso.jpeg" width="180" height="105"> width="180" height="105"/>
+<img src="https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/fig/lasso.jpeg">/>
 </div>
 
 This is the output figure which is made by 'glmnet' pakcage. The two vertical lines represent two different feature numbers. (lambda_min = 8, lambda_1se = 7).<br> Detailed information can be viewed from ‘glmnet’ package. 
