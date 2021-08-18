@@ -2,7 +2,7 @@
 % Please edit documentation in R/Kernel_lasso.R
 \name{gauss}
 \alias{gauss}
-\title{gauss}
+\title{Gauss function}
 \usage{
 gauss(d1, d2, sigma = 0.5)
 }
@@ -14,11 +14,11 @@ gauss(d1, d2, sigma = 0.5)
 \item{sigma}{The hyperparameter of RBF kernel function, which indicates the width.}
 }
 \description{
-gauss function
+Gauss function
 }
 \examples{
 ##
-data(iris)
+data(iris,package = 'datasets')
 w<-gauss(iris[,1],iris[,2])
 print(w)
 }

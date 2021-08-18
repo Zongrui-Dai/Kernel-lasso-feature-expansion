@@ -5,17 +5,19 @@
 #' @param dataframe Wether the data is dataframe. The default is False(numeric)
 #' @keywords max_min_scale
 #' @export
-#' @examples 
+#' @examples
 #' ##For the numeric data
-#' data(iris)
+#' data(iris,package = 'datasets')
 #' w<-max_min_scale(iris[,1])
 #' print(w)
-#' 
+#'
 #' ##For the data.frame data
-#' w1<-max_min_scale(iris[,-5],dataframe=T)
+#' w1<-max_min_scale(iris[,-5],dataframe=TRUE)
 #' print(w1)
-max_min_scale<-function(data,dataframe=F){
-  if(dataframe==F){
+library('graphics')
+library('stats')
+max_min_scale<-function(data,dataframe=FALSE){
+  if(dataframe==FALSE){
     data<-(data-min(data))/(max(data)-min(data))
   }else{
     for(i in 1:length(data)){
@@ -32,18 +34,19 @@ max_min_scale<-function(data,dataframe=F){
 #' @param data Your input data, which can be numerci or data.frame
 #' @param dataframe Wether the data is dataframe. The default is False(numeric)
 #' @keywords Z_score
+#' @importFrom stats var
 #' @export
-#' @examples 
+#' @examples
 #' ##For the numeric data
-#' data(iris)
+#' data(iris,package = 'datasets')
 #' w<-Z_score(iris[,1])
 #' print(w)
-#' 
+#'
 #' ##For the data.frame data
-#' w1<-Z_score(iris[,-5],dataframe=T)
+#' w1<-Z_score(iris[,-5],dataframe=TRUE)
 #' print(w1)
-Z_score<-function(data,dataframe=F){
-  if(dataframe==F){
+Z_score<-function(data,dataframe=FALSE){
+  if(dataframe==FALSE){
     data<-(data-mean(data))/var(data)
   }else{
     for(i in 1:length(data)){

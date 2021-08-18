@@ -7,18 +7,17 @@
 lasso.control(nfolds = 10, trace.it = 1, type.measure = "auc")
 }
 \arguments{
-\item{x}{Your input features, which can have to be data.frame with at least two variables.}
+\item{nfolds}{n-fold cross-validation.}
 
-\item{y}{The dependent variable}
+\item{trace.it}{Whether to plot the training process}
 
-\item{sigma}{The hyperparameter of RBF kernel function, which indicates the width.}
-
-\item{dataframe}{Wether the data is dataframe. The default is TURE}
-
-\item{standard}{Using 'max_min_scale' or 'Z_score' method to standardize the data. NULL means no standardization}
+\item{type.measure}{Choose the loss funcrion.}
+}
+\value{
+The lasso control setting
 }
 \description{
-Kernel_lasso is one feature selection method, which combines the feature expansion and lasso regression together. Kernel function will increase the dimensions of the existed data and then reduce the features by lasso
+The same function from glmnet, which controls the training of lasso.
 }
 \examples{
 ##10-fold Cross-validation with MSE as loss function

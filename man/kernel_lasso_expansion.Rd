@@ -15,14 +15,14 @@
 \item{standard}{Using 'max_min_scale' or 'Z_score' method to standardize the data. NULL means no standardization}
 }
 \description{
-Kernel_lasso is one feature selection method, which combines the feature expansion and lasso regression together. Kernel function will increase the dimensions of the existed data and then reduce the features by lasso
+Kernel_lasso is one feature selection method, which combines the feature expansion and lasso regression together. Kernel function will increase the dimensions of the existed data and then reduce the features by lasso. 'glmnet' package should be higher than 4.1-2.
 }
 \examples{
 ##Regression (MSE)
-data(attenu)
+data(attenu,package = 'datasets')
 result<-kernel_lasso_expansion(x=attenu[,-c(3,5)],y=attenu[,5],
 standard = 'max_min',sigma=0.01,control = lasso.control(nfolds=3,type.measure = 'mse'))
-summary(lasso)
+summary(result)
 
 #Plot the lasso
 plot(result$lasso)

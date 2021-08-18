@@ -3,9 +3,6 @@
 \name{max_min_scale}
 \alias{max_min_scale}
 \title{max_min_scale}
-\usage{
-max_min_scale(data, dataframe = F)
-}
 \arguments{
 \item{data}{Your input data, which can be numerci or data.frame}
 
@@ -16,12 +13,12 @@ max_min_scale is used to calculate the standardization value of data.The formula
 }
 \examples{
 ##For the numeric data
-data(iris)
+data(iris,package = 'datasets')
 w<-max_min_scale(iris[,1])
 print(w)
 
 ##For the data.frame data
-w1<-max_min_scale(iris[,-5],dataframe=T)
+w1<-max_min_scale(iris[,-5],dataframe=TRUE)
 print(w1)
 }
 \keyword{max_min_scale}

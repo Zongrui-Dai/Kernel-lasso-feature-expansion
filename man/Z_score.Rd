@@ -4,7 +4,7 @@
 \alias{Z_score}
 \title{Z_score}
 \usage{
-Z_score(data, dataframe = F)
+Z_score(data, dataframe = FALSE)
 }
 \arguments{
 \item{data}{Your input data, which can be numerci or data.frame}
@@ -16,12 +16,12 @@ Z-score method is used to calculate the standardization value of data.The formul
 }
 \examples{
 ##For the numeric data
-data(iris)
+data(iris,package = 'datasets')
 w<-Z_score(iris[,1])
 print(w)
 
 ##For the data.frame data
-w1<-Z_score(iris[,-5],dataframe=T)
+w1<-Z_score(iris[,-5],dataframe=TRUE)
 print(w1)
 }
 \keyword{Z_score}
