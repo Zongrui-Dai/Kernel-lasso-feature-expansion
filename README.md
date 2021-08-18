@@ -27,8 +27,7 @@ List of 5
 This function is used to calculate the Z-score and max-min-scale of the dataset. The input dataset should be ‘data.frame’
 
 ## Future work
-I will keep updating the program if any improvement is needed. This method still needs further testing to prove whether it can improve the ability of certain<br>
-models or which model will gain the most benefits. <br>
+I will keep updating the program if any improvement is needed. This method still needs further testing to prove whether it can improve the ability of certain models or which model will gain the most benefits. <br>
 
 ## Tips
 1.The package has been updated to CRAN. If the test is passed, I will put up a link here.
