@@ -6,6 +6,8 @@ This program manily used to amplify the existed dimension of dataset by creating
 
 This method may improve the accuracy of some models when making regression or classification. It's one small attempt, which may need further improvement.<br>
 
+![](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/fig/lasso.jpeg)<br>
+
 ## Function
 1.[Kernel_lasso.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Kernel_lasso.R)
 It is used to construct the kernel-lasso structure and output the final features. The ‘kernel_lasso_expansion’ will return 5 results contains in one list:<br>
