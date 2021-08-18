@@ -5,8 +5,10 @@ This program manily used to amplify the existed dimension of dataset by creating
 2. Remove the abundant feature by lasso method<br>
 
 This method may improve the accuracy of some models when making regression or classification. It's one small attempt, which may need further improvement.<br>
-
+<div align=center>
 ![](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/fig/lasso.jpeg)<br>
+</div>
+This is the output figure which is made by 'glmnet' pakcage. The two vertical lines represent two different feature numbers. (lambda_min = 8, lambda_1se = 7).<br> Detailed information can be viewed from ‘glmnet’ package. 
 
 ## Function
 1.[Kernel_lasso.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Kernel_lasso.R)
