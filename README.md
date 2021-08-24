@@ -12,6 +12,17 @@ This method may improve the accuracy of some models when making regression or cl
 
 This is the output figure which is made by 'glmnet' pakcage. The two vertical lines represent two different feature numbers. (lambda_min = 8, lambda_1se = 7).Detailed information can be viewed from ‘glmnet’ package. 
 
+## Install
+1.R CRAN
+```R
+install.packages('KLexp')
+```
+2.github
+```R
+library(devtools)
+install_github('https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion')
+```
+
 ## Function
 1.[Kernel_lasso.R](https://github.com/Zongrui-Dai/Kernel-lasso-feature-expansion/blob/main/R/Kernel_lasso.R)<br>
 It is used to construct the kernel-lasso structure and output the final features. The ‘kernel_lasso_expansion’ will return 5 results contains in one list:<br>
@@ -34,3 +45,8 @@ I will keep updating the program if any improvement is needed. This method still
 ```
 Z. Dai, J. Li, T. Gong, C. Wang (2021), Kernel_lasso feature expansion method: boosting the prediction ability of machine learning in heart attack,” 2021 IEEE.
 ```
+2.R CRAN
+```
+https://mirror-hk.koddos.net/CRAN/src/contrib/KLexp_1.0.0.tar.gz
+```
+
